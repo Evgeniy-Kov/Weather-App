@@ -1,7 +1,7 @@
 package com.example.weatherapp.domain.api
 
-import com.example.weatherapp.domain.model.Forecast
-import com.example.weatherapp.domain.model.Weather
+import com.example.weatherapp.domain.entity.Forecast
+import com.example.weatherapp.domain.entity.Weather
 
 interface WeatherRepository {
 

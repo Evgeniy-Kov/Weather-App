@@ -1,11 +1,11 @@
 package com.example.weatherapp.domain.api
 
-import com.example.weatherapp.domain.model.City
+import com.example.weatherapp.domain.entity.City
 import kotlinx.coroutines.flow.Flow
 
 interface FavouriteRepository {
 
-    val favouriteCities: Flow<City>
+    val favouriteCities: Flow<List<City>>
 
     fun observeIsFavourite(cityId: Int): Flow<Boolean>
 

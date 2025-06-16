@@ -1,7 +1,7 @@
 package com.example.weatherapp.domain.usecase
 
 import com.example.weatherapp.domain.api.FavouriteRepository
-import com.example.weatherapp.domain.model.City
+import com.example.weatherapp.domain.entity.City
 import javax.inject.Inject
 
 class AddCityToFavouriteUseCase @Inject constructor(

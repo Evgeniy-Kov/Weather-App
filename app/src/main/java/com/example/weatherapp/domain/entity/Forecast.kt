@@ -1,4 +1,4 @@
-package com.example.weatherapp.domain.model
+package com.example.weatherapp.domain.entity
 
 data class Forecast(
     val currentWeather: Weather,

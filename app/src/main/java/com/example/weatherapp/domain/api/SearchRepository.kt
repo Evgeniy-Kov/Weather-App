@@ -1,6 +1,6 @@
 package com.example.weatherapp.domain.api
 
-import com.example.weatherapp.domain.model.City
+import com.example.weatherapp.domain.entity.City
 
 interface SearchRepository {
 

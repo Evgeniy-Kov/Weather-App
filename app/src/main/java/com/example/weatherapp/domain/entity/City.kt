@@ -1,4 +1,4 @@
-package com.example.weatherapp.domain.model
+package com.example.weatherapp.domain.entity
 
 data class City(
     val id: Int,
