@@ -18,6 +18,13 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        val key = property("apikey")?.toString() ?: error(
+            "You should add apikey into " +
+                    "gradle.properties"
+        )
+
+        buildConfigField("String", "WEATHER_API_KEY", "\"$key\"")
     }
 
     buildTypes {
@@ -37,6 +44,7 @@ android {
         jvmTarget = "11"
     }
     buildFeatures {
+        buildConfig = true
         compose = true
     }
 }
@@ -68,8 +76,9 @@ dependencies {
     implementation(libs.glide.compose)
     implementation(libs.retorfit.core)
     implementation(libs.retorfit.gsonConverter)
+    implementation(libs.logging.interceptor)
     implementation(libs.icons)
-    
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
