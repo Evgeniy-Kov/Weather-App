@@ -10,7 +10,7 @@ import retrofit2.create
 object ApiFactory {
 
     private const val KEY_PARAM = "key"
-    private const val BASE_URL = "https://api.weather.com/v1/"
+    private const val BASE_URL = "https://api.weatherapi.com/v1/"
 
     private val okHttpClient = OkHttpClient.Builder()
         .addInterceptor { chain ->
